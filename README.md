@@ -1,11 +1,11 @@
 # SerialPortWeight
 app read serial port COM and send the data to socket
 
-#requirements
+# Requirements
 *node js 12.8.3* o superior
 
-install
+# Install
 *npm install*
 
-run
+# Run
 *node app.js*
