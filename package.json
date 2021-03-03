@@ -8,6 +8,12 @@
   },
   "author": "",
   "license": "ISC",
+
+  "bin": "app.js",
+  "pkg": {
+    "targets": [ "node12-win-x64" ]
+  },
+
   "dependencies": {
     "express": "^4.17.1",
     "serialport": "^9.0.7",
