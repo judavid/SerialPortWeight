@@ -8,13 +8,14 @@
   },
   "author": "",
   "license": "ISC",
-
   "bin": "app.js",
   "pkg": {
-    "targets": [ "node12-win-x64" ]
+    "targets": [
+      "node12-win-x64"
+    ]
   },
-
   "dependencies": {
+    "@serialport/parser-readline": "^9.0.7",
     "express": "^4.17.1",
     "serialport": "^9.0.7",
     "socket.io": "^3.1.2"

@@ -3,8 +3,8 @@ var net = require('net');
 // creating a custom socket client and connecting it....
 var client  = new net.Socket();
 client.connect({
-    host : config.socket.host,
-    port : config.socket.port
+    host : "config.socket.host",
+    port : "config.socket.port"
 });
 
 client.on('connect',function(){

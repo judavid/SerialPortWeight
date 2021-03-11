@@ -1,13 +1,12 @@
 {
-    "socket" : {
-        "host" : "127.0.0.1",
-        "port" : 2017
+    "server" : {
+        "port" : 8080
     },
     "serialport" : {
-        "port" : "COM4",
+        "port" : "COM3",
         "baudRate" : 9600,
         "dataBits" : 8,
         "messageInit" : "P"
     },
-    "schedule" : 1500
+    "waitingDataWeight": 0.3
 }
