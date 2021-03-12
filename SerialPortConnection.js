@@ -1,17 +1,16 @@
-const config = require('./config.json');
+const config = require('./ConfigReader');
 const SerialPort = require('serialport')
 
-const port = new SerialPort(config.serialport.port, 
+const port = new SerialPort(config.config.serialport.port, 
                                     { autoOpen: false, 
-                                      baudRate : config.serialport.baudRate, 
-                                      dataBits : config.serialport.dataBits }).setEncoding('utf8');
+                                      baudRate : config.config.serialport.baudRate, 
+                                      dataBits : config.config.serialport.dataBits }).setEncoding('utf8');
 port.open(function (err) {
   if (err) {
     return console.log('Error opening port: ', err.message)
   }
 
-  // Because there's no callback to write, write errors will be emitted on the port:
-  port.write(Buffer.from(config.serialport.messageInit))
+  port.write(Buffer.from(config.config.serialport.messageInit))
 })
 
 exports.port = port;
